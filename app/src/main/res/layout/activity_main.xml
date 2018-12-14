@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:text="人品计算器"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="35dp"
+        android:hint="请输入姓名"
+        android:textColor="@android:color/background_dark" />
+
+    <RadioGroup
+        android:id="@+id/rg_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/et_name"
+
+        android:layout_marginTop="-3dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="男"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_calc"
+            android:layout_weight="1"
+            android:text="女" />
+
+        <RadioButton
+            android:id="@+id/rb_uknown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="未知" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="127dp"
+        android:text="计算"
+        android:onClick="click"/>
+</RelativeLayout>
